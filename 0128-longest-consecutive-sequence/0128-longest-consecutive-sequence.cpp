@@ -1,3 +1,4 @@
+#define INT_MAX 100000
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
@@ -5,7 +6,7 @@ public:
         set<int> sortedNums (nums.begin(), nums.end());
         
         int maxCons = 1, cons = 1;
-        int current = 100000;
+        int current = INT_MAX;
         for (auto i = sortedNums.begin(); i != sortedNums.end(); i++) {
             if (current + 1 == *i) {
                 cons++;
