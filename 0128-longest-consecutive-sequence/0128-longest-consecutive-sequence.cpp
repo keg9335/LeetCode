@@ -1,4 +1,4 @@
-#define INT_MAX 100000
+#define INT_MAX 1000000000
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
