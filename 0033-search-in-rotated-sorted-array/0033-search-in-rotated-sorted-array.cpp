@@ -1,11 +1,10 @@
 class Solution {
 public:
     int search(vector<int>& nums, int target) {
-        int l = 0, r = nums.size() - 1;
-        return searchIndex(nums, target, l, r);
+        return searchIndex(nums, target, 0, nums.size()-1);
     }
 private:
-    int searchIndex(vector<int>& nums, int target, int l, int r) {
+    int searchIndex(vector<int>& nums, int& target, int l, int r) {
         int mid = (l + r) / 2;
         
         if (nums[l] <= nums[mid] && nums[mid] <= nums[r])
@@ -24,7 +23,7 @@ private:
 
     }
     
-    int binarySearch(vector<int>& nums, int target, int l, int r) {
+    int binarySearch(vector<int>& nums, int& target, int l, int r) {
         int mid = (l + r) / 2;
         
         while (l <= r) {
