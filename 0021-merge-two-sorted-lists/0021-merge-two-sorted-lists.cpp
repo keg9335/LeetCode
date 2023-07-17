@@ -11,11 +11,11 @@
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-        ListNode* result;
-        
         if (list1 == nullptr) return list2;
         if (list2 == nullptr) return list1;
         
+        ListNode* result;
+
         if (list1->val > list2->val) {
             result = new ListNode(list2->val);
             list2 = list2->next;
