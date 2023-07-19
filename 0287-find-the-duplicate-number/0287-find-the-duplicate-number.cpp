@@ -1,8 +1,7 @@
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
-        int n = nums.size()-1;
-        vector<bool> check(n);
+        vector<bool> check(nums.size()-1);
         int result = 0;
         for (int val : nums) {
             if (!check[val]) check[val] = true;
