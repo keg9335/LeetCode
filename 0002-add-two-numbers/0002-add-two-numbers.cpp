@@ -16,18 +16,17 @@ public:
         ListNode* current = result;
         ListNode* nullNode = new ListNode();
         
-        while (1) {
-            val = (l1->val + l2->val + carry) % 10;
-            current->val = val;
-            carry = (l1->val + l2->val + carry) / 10;
-            if (l1->next == nullptr && l2->next == nullptr 
-                && carry == 0) break;
+        while (l1 || l2 || carry) {
             current->next = new ListNode();
             current = current->next;
-            l1 = l1->next == nullptr? nullNode : l1->next;
-            l2 = l2->next == nullptr? nullNode : l2->next;
+            int val1 = l1?l1->val:0, val2 = l2?l2->val:0;
+            val = (val1 + val2 + carry) % 10;
+            current->val = val;
+            carry = (val1 + val2 + carry) / 10;
+            l1 = l1? l1->next : nullptr;
+            l2 = l2? l2->next : nullptr;
         }
         
-        return result;
+        return result->next;
     }
 };
