@@ -8,6 +8,7 @@ public:
             if (resMap.count(numbers[i])) {
                 result.push_back(resMap[numbers[i]]);
                 result.push_back(i+1);
+                break;
             }
             else {
                 resMap[target-numbers[i]] = i+1;
