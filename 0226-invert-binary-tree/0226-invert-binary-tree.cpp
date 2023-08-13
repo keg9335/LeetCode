@@ -12,22 +12,12 @@
 class Solution {
 public:
     TreeNode* invertTree(TreeNode* root) {
-        root = invertLeftRight(root);
-        return root;      
-    }
-private:
-    TreeNode* invertLeftRight(TreeNode* root) {
         if (!root) return root;
 
         TreeNode* temp = root->left;
-        if (root->right) 
-            root->left = invertLeftRight(root->right);
-        else root->left = root->right;
-
-        if (temp) 
-            root->right = invertLeftRight(temp);
-        else root->right = temp;
-    
+        root->left = invertTree(root->right);
+        root->right = invertTree(temp);    
+        
         return root;
     }
 };
