@@ -13,15 +13,15 @@ class Solution {
 public:
     int kthSmallest(TreeNode* root, int k) {
         vector<int> array;
-        bfs(root, array);
+        inorder(root, array);
         
         return array[k-1];
     }
 private:
-    void bfs(TreeNode* root, vector<int>& array) {
+    void inorder(TreeNode* root, vector<int>& array) {
         if (!root) return;
-        bfs(root->left, array);
+        inorder(root->left, array);
         array.push_back(root->val);
-        bfs(root->right, array);
+        inorder(root->right, array);
     }
 };
