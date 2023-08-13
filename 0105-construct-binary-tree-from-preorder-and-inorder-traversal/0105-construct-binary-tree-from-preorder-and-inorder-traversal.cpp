@@ -12,6 +12,13 @@
 class Solution {
 public:
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
+        TreeNode* result = createTree(preorder, inorder);
+
+        return result;
+    }
+
+private:
+    TreeNode* createTree(vector<int>& preorder, vector<int>& inorder) {
         if (preorder.size() == 0) return nullptr;
         TreeNode* result = new TreeNode(preorder[0]);
         if (preorder.size() == 1) return result;
@@ -30,8 +37,8 @@ public:
         vector<int> fIn(inorder.begin(), inorder.begin()+mid);
         vector<int> rIn(inorder.begin()+mid+1, inorder.end());
 
-        result->left = buildTree(fPre, fIn);
-        result->right = buildTree(rPre, rIn);
+        result->left = createTree(fPre, fIn);
+        result->right = createTree(rPre, rIn);
 
         return result;
     }
