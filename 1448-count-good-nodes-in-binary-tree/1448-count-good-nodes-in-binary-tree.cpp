@@ -12,21 +12,21 @@
 class Solution {
 public:
     int goodNodes(TreeNode* root) {
-        int max = -1e4, count = 0;
-        checkGooeNode(root, max, count);
+        int maximum = -1e4, count = 0;
+        checkGooeNode(root, maximum, count);
         
         return count;                        
     }
 private:
-    void checkGooeNode(TreeNode* root, int max, int& count) {
-        if (root->val >= max) {
-            max = root->val;
+    void checkGooeNode(TreeNode* root, int maximum, int& count) {
+        if (root->val >= maximum) {
+            maximum = root->val;
             count++;
             cout<<root->val<<endl;
         }
         
-        if (root->left) checkGooeNode(root->left, max, count);
-        if (root->right) checkGooeNode(root->right, max, count);
+        if (root->left) checkGooeNode(root->left, maximum, count);
+        if (root->right) checkGooeNode(root->right, maximum, count);
         
     }
 };
