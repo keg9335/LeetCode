@@ -22,7 +22,6 @@ private:
         if (root->val >= maximum) {
             maximum = root->val;
             count++;
-            cout<<root->val<<endl;
         }
         
         if (root->left) checkGooeNode(root->left, maximum, count);
