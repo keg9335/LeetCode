@@ -13,7 +13,7 @@ public:
         return board;
     }
     
-    void solveQueens(int n, int curr, vector<vector<string>>& board, vector<string> ex) {
+    void solveQueens(int& n, int curr, vector<vector<string>>& board, vector<string> ex) {
         if (curr == n) { 
             board.push_back(ex);
             return;
@@ -30,7 +30,7 @@ public:
         }      
     }
     
-    void operateQueen(int n, int curr, int idx, vector<string>& ex) {
+    void operateQueen(int& n, int curr, int idx, vector<string>& ex) {
         for (int i = 0; i < n; i++) {
             if (i != idx)
                 ex[curr][i] = '.';
