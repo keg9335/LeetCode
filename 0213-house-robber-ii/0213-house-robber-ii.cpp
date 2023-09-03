@@ -1,8 +1,9 @@
 class Solution {
 public:
     int rob(vector<int>& nums) {
-        if (nums.size() == 1) return nums[0];
-        else if (nums.size() == 2) return max(nums[0], nums[1]);
+        int len = nums.size();
+        if (len == 1) return nums[0];
+        else if (len == 2) return max(nums[0], nums[1]);
 
         vector<int> nums1(nums.begin(), nums.end()-1);
         vector<int> nums2(nums.begin()+1, nums.end());
