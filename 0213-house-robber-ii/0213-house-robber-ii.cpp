@@ -11,12 +11,11 @@ public:
         return max(robDP(nums1), robDP(nums2));
     }
     int robDP(vector<int>& nums) {
-        int len = nums.size();
-        vector<int> dp(len, 0);
+        vector<int> dp(nums.size(), 0);
         dp[0] = nums[0];
         dp[1] = max(nums[0], nums[1]);
-        for (int i = 2; i < len; i++)
+        for (int i = 2; i < nums.size(); i++)
             dp[i] = max(dp[i-1], dp[i-2]+nums[i]);
-        return dp[len-1];
+        return dp[nums.size()-1];
     }
 };
