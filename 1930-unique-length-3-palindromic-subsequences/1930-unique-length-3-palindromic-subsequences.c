@@ -1,11 +1,3 @@
-int isPalindrome(char* s){
-    int len = strlen(s);
-    for (int i = 0; i < len/2; i++) {
-        if (s[i] != s[len-i-1]) return 0;
-    }
-    return 1;
-}
-
 int countPalindromicSubsequence(char* s) {
     int cnt = 0, i = 0, j = 0, letters = 0;
     int len = strlen(s);
