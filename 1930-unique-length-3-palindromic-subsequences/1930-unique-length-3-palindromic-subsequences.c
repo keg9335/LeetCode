@@ -1,0 +1,32 @@
+int isPalindrome(char* s){
+    int len = strlen(s);
+    for (int i = 0; i < len/2; i++) {
+        if (s[i] != s[len-i-1]) return 0;
+    }
+    return 1;
+}
+
+int countPalindromicSubsequence(char* s) {
+    int cnt = 0, i = 0, j = 0, letters = 0;
+    int len = strlen(s);
+    char visited[26] = {0,};
+
+    for (i = 0; i < len - 1; i++) {
+        if (visited[s[i]-'a']) continue;
+        int frequency[26] = {0,};
+        int endidx = 0;
+        visited[s[i]-'a'] = 1;
+        for (j = len-1; j > i; j--) {
+            if (endidx)
+                frequency[s[j] - 'a']++;
+            else if (s[j] == s[i]) endidx = j;
+        }
+        if (endidx > i+1) {
+            for (j = 0 ; j < 26; j++) {
+                if (frequency[j]) cnt++;
+            }
+        }
+    }
+  
+    return cnt;
+}
