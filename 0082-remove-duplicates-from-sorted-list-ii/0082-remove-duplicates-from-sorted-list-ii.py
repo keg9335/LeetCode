@@ -16,9 +16,9 @@ class Solution:
                     prev.next = curr.next
                 else:
                     head_deduplicated = curr.next
-                curr = curr.next                    # type: ignore
+                curr = curr.next                    
             else:
-                prev, curr = curr, curr.next            # type: ignore
+                prev, curr = curr, curr.next           
 
         return head_deduplicated
         
