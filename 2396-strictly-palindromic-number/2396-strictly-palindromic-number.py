@@ -4,10 +4,9 @@ class Solution:
         
         for b in range(2, n - 1):
             temp = 0
-            while n_tmp / b:
+            while n_tmp:
                 temp = temp * b + n_tmp % b
                 n_tmp /= b
-            temp = b * temp + n_tmp
             if temp != n: return False
             
         return True
