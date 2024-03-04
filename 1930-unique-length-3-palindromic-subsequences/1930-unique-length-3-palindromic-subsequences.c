@@ -1,5 +1,5 @@
 int countPalindromicSubsequence(char* s) {
-    int cnt = 0, i = 0, j = 0, letters = 0;
+    int cnt = 0, i = 0, j = 0;
     int len = strlen(s);
     char visited[26] = {0,};
     int endidx = 0;
