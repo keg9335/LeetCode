@@ -1,6 +1,5 @@
 int singleNumber(int* nums, int numsSize) {
     for (int i = 0; i < numsSize; i++) {
-        int cnt = 0;
         int flag = 0;
         for (int j = 0; j < numsSize; j++) {
             if (i != j && nums[i] == nums[j]){
