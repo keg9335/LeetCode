@@ -33,6 +33,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0198-house-robber](https://github.com/keg9335/LeetCode/tree/master/0198-house-robber) |
 | [0240-search-a-2d-matrix-ii](https://github.com/keg9335/LeetCode/tree/master/0240-search-a-2d-matrix-ii) |
 | [0349-intersection-of-two-arrays](https://github.com/keg9335/LeetCode/tree/master/0349-intersection-of-two-arrays) |
+| [0393-utf-8-validation](https://github.com/keg9335/LeetCode/tree/master/0393-utf-8-validation) |
 ## Binary Search
 |  |
 | ------- |
@@ -94,5 +95,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0136-single-number](https://github.com/keg9335/LeetCode/tree/master/0136-single-number) |
 | [0191-number-of-1-bits](https://github.com/keg9335/LeetCode/tree/master/0191-number-of-1-bits) |
 | [0371-sum-of-two-integers](https://github.com/keg9335/LeetCode/tree/master/0371-sum-of-two-integers) |
+| [0393-utf-8-validation](https://github.com/keg9335/LeetCode/tree/master/0393-utf-8-validation) |
 | [0461-hamming-distance](https://github.com/keg9335/LeetCode/tree/master/0461-hamming-distance) |
 <!---LeetCode Topics End-->
