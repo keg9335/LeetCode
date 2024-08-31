@@ -76,6 +76,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/keg9335/LeetCode/tree/master/0070-climbing-stairs) |
+| [0371-sum-of-two-integers](https://github.com/keg9335/LeetCode/tree/master/0371-sum-of-two-integers) |
 | [1013-fibonacci-number](https://github.com/keg9335/LeetCode/tree/master/1013-fibonacci-number) |
 ## Recursion
 |  |
@@ -90,5 +91,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0136-single-number](https://github.com/keg9335/LeetCode/tree/master/0136-single-number) |
+| [0371-sum-of-two-integers](https://github.com/keg9335/LeetCode/tree/master/0371-sum-of-two-integers) |
 | [0461-hamming-distance](https://github.com/keg9335/LeetCode/tree/master/0461-hamming-distance) |
 <!---LeetCode Topics End-->
