@@ -6,10 +6,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Depth-First Search
 |  |
 | ------- |
+| [0104-maximum-depth-of-binary-tree](https://github.com/keg9335/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0744-network-delay-time](https://github.com/keg9335/LeetCode/tree/master/0744-network-delay-time) |
 ## Breadth-First Search
 |  |
 | ------- |
+| [0104-maximum-depth-of-binary-tree](https://github.com/keg9335/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0744-network-delay-time](https://github.com/keg9335/LeetCode/tree/master/0744-network-delay-time) |
 ## Graph
 |  |
@@ -97,4 +99,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0371-sum-of-two-integers](https://github.com/keg9335/LeetCode/tree/master/0371-sum-of-two-integers) |
 | [0393-utf-8-validation](https://github.com/keg9335/LeetCode/tree/master/0393-utf-8-validation) |
 | [0461-hamming-distance](https://github.com/keg9335/LeetCode/tree/master/0461-hamming-distance) |
+## Tree
+|  |
+| ------- |
+| [0104-maximum-depth-of-binary-tree](https://github.com/keg9335/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
+## Binary Tree
+|  |
+| ------- |
+| [0104-maximum-depth-of-binary-tree](https://github.com/keg9335/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 <!---LeetCode Topics End-->
